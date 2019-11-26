@@ -1,7 +1,7 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A custom theme for ghost",
-    "demo": "https://starter.ghost.io",
+    "name": "pico",
+    "description": "A paid members publishing theme for Ghost",
+    "demo": "https://pico.ghost.io",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",
@@ -39,10 +39,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
+        "url": "https://github.com/TryGhost/Pico.git"
     },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
+    "bugs": "https://github.com/TryGhost/Pico/issues",
+    "contributors": "https://github.com/TryGhost/Pico/graphs/contributors",
     "devDependencies": {
         "autoprefixer": "9.6.1",
         "cssnano": "4.1.10",
