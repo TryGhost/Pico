@@ -1,6 +1,6 @@
-# Ghost Starter Theme
+# Pico
 
-A starter framework for Ghost themes! Fork this repository and start your development here with all the main things you need to develop a custom Ghost theme.
+A minimal, functional theme for running a paid-membership publication on [Ghost](https://ghost.org) - originally created by [@pjrvs](https://github.com/pjrvs) and [@jackellis](https://github.com/jackellis), acquired and stewarded by [@tryghost](https://github.com/tryghost) in 2019. Now available for free, for everyone!
 
 &nbsp;
 
