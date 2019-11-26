@@ -80,6 +80,37 @@ html,
     height: 2rem;
 }
 
+
+/* Pico Header
+/* ---------------------------------------------------------- */
+
+.pico-sitehead {
+    padding: 8vmin 0;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.pico-sitehead > img {
+    flex-shrink: 0;
+    width: 140px;
+    margin-right: 20px;
+    object-fit: fit;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.pico-sitehead h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.pico-sitehead p {
+    opacity: 0.6;
+}
+
+
 /* Index
 /* ---------------------------------------------------------- */
 
@@ -237,4 +268,24 @@ html,
     .gh-author-meta {
         font-size: 1.6rem;
     }
+}
+
+
+/* Global Footer
+/* ---------------------------------------------------------- */
+
+.gh-foot-actions a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.gh-foot-actions a svg {
+    height: 1.8rem;
+    fill: currentcolor;
+}
+
+.gh-foot-actions a:last-child svg {
+    height: 2rem;
 }

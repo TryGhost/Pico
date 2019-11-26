@@ -3,6 +3,16 @@
 <div class="gh-page">
     <div class="gh-container">
 
+        <header class="pico-sitehead">
+            {{#if @site.logo}}
+                <img src="{{@site.logo}}" alt="{{@site.title}}" />
+            {{/if}}
+            <div class="pico-sitehead-content">
+                <h1>{{@site.title}}</h1>
+                <p>{{@site.description}}</p>
+            </div>
+        </header>
+
         <div class="gh-postfeed">
         {{#foreach posts}}
 
