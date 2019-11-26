@@ -261,7 +261,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     font-size: 2.2rem;
 }
 #gh-head .gh-head-logo img {
-    max-height: 40px;
+    max-height: 25px;
 }
 #gh-head .gh-head-menu {
     align-self: center;
