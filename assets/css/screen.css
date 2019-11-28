@@ -89,7 +89,7 @@ html,
     max-width: 700px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .pico-sitehead > img {
@@ -102,12 +102,23 @@ html,
 }
 
 .pico-sitehead h1 {
+    margin: 0 0 5px 0;
     font-size: 2.4rem;
     font-weight: 800;
 }
 
 .pico-sitehead p {
-    opacity: 0.6;
+    font-size: 1.7rem;
+    opacity: 0.5;
+}
+
+.pico-sitehead-cta {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.pico-sitehead-cta .gh-button + .gh-button {
+    margin-left: 15px;
 }
 
 
@@ -270,6 +281,18 @@ html,
     }
 }
 
+.gh-button,
+.gh-button:hover {
+    color: #aaa !important;
+    font-weight: 500;
+    box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
+}
+
+.gh-button.gh-button-primary,
+.gh-button.gh-button-primary:hover {
+    color: #fff !important;
+    box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
+}
 
 /* Global Footer
 /* ---------------------------------------------------------- */
