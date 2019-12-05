@@ -60,6 +60,12 @@ html,
     margin: 0 auto;
 }
 
+.pico-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .gh-head-actions a {
     display: inline-flex;
     align-items: center;
@@ -86,8 +92,6 @@ html,
 
 .pico-sitehead {
     padding: 8vmin 0;
-    max-width: 700px;
-    margin: 0 auto;
     display: flex;
     align-items: flex-start;
 }
@@ -234,6 +238,18 @@ html,
     margin: 2rem 0;
 }
 
+.gh-readmore {
+    padding: 6vmin 4vw;
+}
+
+.gh-readmore h4 {
+    font-size: 2rem;
+}
+
+.gh-readmore svg {
+    margin-top: 0;
+}
+
 
 /* Author Archive
 /* ---------------------------------------------------------- */
@@ -293,6 +309,39 @@ html,
     color: #fff !important;
     box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
 }
+
+
+/* Pico CTA
+/* ---------------------------------------------------------- */
+
+.pico-cta {
+    padding: 6vmin 4vw;
+    border-top: var(--color-border) 1px solid;
+    border-bottom: var(--color-border) 1px solid;
+}
+
+.pico-cta h5 {
+    margin-bottom: 0.4em;
+    font-size: 2rem;
+}
+
+.pico-cta .gh-button {
+    float: right;
+    margin: 0.3em 0 0.3em 6vmin;
+}
+
+@media (max-width: 600px) {
+    .pico-cta .pico-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .pico-cta .gh-button {
+        order: 3;
+        float: none;
+        margin: 1.5em 0 0 0;
+    }
+}
+
 
 /* Global Footer
 /* ---------------------------------------------------------- */
