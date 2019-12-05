@@ -41,6 +41,10 @@ html,
 }
 
 .gh-page {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 4vw;
 }
 
@@ -66,24 +70,9 @@ html,
     margin: 0 auto;
 }
 
-.gh-head-actions a {
-    display: inline-flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-}
-
-.gh-head-actions a svg {
-    height: 1.8rem;
-    fill: currentcolor;
-}
-
-.gh-head-actions a:first-child svg {
-    margin-left: 20px;
-}
-
-.gh-head-actions a:last-child svg {
-    height: 2rem;
+.gh-head-actions {
+    margin: 0 0 4vmin 0;
+    transform: scale(1.15);
 }
 
 
@@ -239,15 +228,12 @@ html,
 }
 
 .gh-readmore {
-    padding: 6vmin 4vw;
-}
-
-.gh-readmore h4 {
-    font-size: 2rem;
+    padding: 0 4vw 4vw;
+    font-size: 1.7rem;
 }
 
 .gh-readmore svg {
-    margin-top: 0;
+    margin-top: 1px;
 }
 
 

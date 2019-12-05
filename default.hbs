@@ -43,8 +43,8 @@
                     <a class="account-link" href="/account/">Account</a>
                     <a class="button small header-cta signout-link" href="#signout" data-members-signout>Log out</a>
                 {{else}}
-                    <a class="signin-link" href="/signin/">Log in</a>
-                    <a class="button primary small header-cta" href="/signup/">Subscribe</a>
+                    <a class="gh-button" href="/signin/">Sign in</a>
+                    <a class="gh-button gh-button-primary" href="/signup/">Subscribe now</a>
                 {{/if}}
             </div>
         </div>
@@ -55,6 +55,8 @@
 
     {{{body}}}
     {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
+
+    {{> "subscribe"}}
 
 </main>
 

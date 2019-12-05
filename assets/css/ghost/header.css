@@ -66,12 +66,12 @@
     padding: 0;
 }
 
-.gh-head-menu .nav a {
+.gh-head-menu .nav a:not([class]) {
     display: inline-block;
     padding: 5px 0;
 }
 
-.gh-head-menu .nav-current a {
+.gh-head-menu .nav-current a:not([class]) {
     box-shadow: 0 -1px 0 0 currentcolor inset;
 }
 
@@ -94,7 +94,7 @@
     align-items: center;
 }
 
-.gh-head-actions-list a {
+.gh-head-actions-list a:not([class]) {
     display: inline-block;
     margin: 0 0 0 1.5vw;
     padding: 5px 0;
