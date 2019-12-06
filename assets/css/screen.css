@@ -199,12 +199,67 @@ html,
 
 .gh-header {
     padding: 0 0 8vmin 0;
-    text-align: center;
+}
+
+.pico-pagehead {
+    padding: 0 0 8vmin 0;
+    display: flex;
+    align-items: center;
+}
+
+.pico-pagehead-content {
+    display: flex;
+}
+
+.pico-pagehead > img {
+    flex-shrink: 0;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: fit;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.pico-pagehead h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.pico-pagehead p {
+    font-size: 1.4rem !important;
+    color: rgba(0,0,0,0.5);
+}
+
+.pico-pagehead p strong {
+    color: rgba(0,0,0,0.9);
+}
+
+.pico-pagehead-cta {
+    margin: 0.2em 0 0 20px;
+}
+
+@media (max-width: 700px) {
+    .pico-pagehead {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pico-pagehead p {
+        margin: 20px 0;
+    }
+    .pico-pagehead-content {
+        flex-direction: column;
+    }
+    .pico-pagehead-cta {
+        margin: 0.2em 0 0 0;
+    }
 }
 
 .gh-post-meta {
     display: block;
-    margin: 0 0 1rem;
+    margin: 0 0 0.5rem;
     font-size: 1.4rem;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -292,7 +347,7 @@ html,
 
 .gh-button,
 .gh-button:hover {
-    color: #aaa !important;
+    color: #999 !important;
     font-weight: 500;
     box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
 }
