@@ -12,7 +12,13 @@
             <div class="pico-pagehead-content">
                 <p><strong>{{@site.title}}</strong> &bull; {{@site.description}}</p>
                 <div class="pico-pagehead-cta">
-                    <a class="gh-button" href="/signup/">Subscribe now</a>
+                    {{#if @member.paid}}
+                        <a class="gh-button" href="/signup/">My account</a>
+                    {{else if @member}}
+                        <a class="gh-button" href="/signup/">Upgrade now</a>
+                    {{else}}
+                        <a class="gh-button" href="/signup/">Subscribe now</a>
+                    {{/if}}
                 </div>
             </div>
         </div>

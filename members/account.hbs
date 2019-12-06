@@ -3,24 +3,86 @@
 <div class="gh-page">
     <div class="pico-container">
 
+        <header class="pico-accounthead">
+            <div class="pico-accounthead-content">
+                <h1>Your account</h1>
+                <p>Hey there — here are all the settings and data for your account. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing!</p>
+            </div>
+        </header>
+
     {{#if @member.paid}}
 
         {{!-- Logged in, paying member: Show account info --}}
-        <div class="account-box">
-            <h2 class="account-box-title">Nice, you're a subscriber!</h2>
-            <p>Hey! <strong>{{@member.email}}</strong> has an active {{@site.title}} account with access to all areas. You're all set, but if you need any help, get in touch with us and we'd be happy to help.</p>
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Account status</label>
+                <div class="pico-field-value">Paid member</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="" class="gh-button gh-button-primary">Get Support</a>
+            </div>
+        </div>
+
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Email address</label>
+                <div class="pico-field-value">{{@member.email}}</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="" class="gh-button">Sign out</a>
+            </div>
+        </div>
+
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Your plan</label>
+                <div class="pico-field-value">$<span class="plan-price">0</span>/{{plan.interval}}</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="" class="gh-button">Edit</a>
+            </div>
+        </div>
+
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Billing info</label>
+                <div class="pico-field-value">**** **** **** {{default_payment_card_last4}}</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="" class="gh-button">Update</a>
+            </div>
+        </div>
+
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Next bill date</label>
+                <div class="pico-field-value">{{date current_period_end format="DD MMM YYYY"}}</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="" class="gh-button">Cancel</a>
+            </div>
         </div>
 
     {{else if @member}}
 
         {{!-- Logged in, not paying: Link to checkout --}}
-        <div class="account-box">
-            <h1 class="account-box-title">Currently, you're not a subscriber</h1>
-            <p>Hey there! <strong>{{@member.email}}</strong> is subscribed to free updates from {{@site.title}}, but doesn't have a paid subscription to unlock full access.</p>
-            <div class="authbox-signup">
-                <a class="button primary" href="/signup/">
-                    <span class="button-content">Subscribe now</span>
-                </a>
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Account status</label>
+                <div class="pico-field-value">Free subscriber</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="/signup/" class="gh-button gh-button-primary">Upgrade</a>
+            </div>
+        </div>
+
+        <div class="pico-field">
+            <div class="pico-field-content">
+                <label>Email address</label>
+                <div class="pico-field-value">{{@member.email}}</div>
+            </div>
+            <div class="pico-field-actions">
+                <a href="" class="gh-button">Sign out</a>
             </div>
         </div>
 

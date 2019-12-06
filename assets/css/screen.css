@@ -390,6 +390,44 @@ html,
 }
 
 
+/* Account
+/* ---------------------------------------------------------- */
+
+.pico-accounthead {
+    padding: 0 0 8vmin 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pico-accounthead h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.pico-accounthead p {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    opacity: 0.6;
+}
+
+.pico-field {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.pico-field + .pico-field {
+    margin-top: 3vmin;
+}
+
+.pico-field-value {
+    font-size: 1.8rem;
+    color: rgba(0,0,0,0.4);
+}
+
+
 /* Global Footer
 /* ---------------------------------------------------------- */
 

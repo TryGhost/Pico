@@ -1,4 +1,19 @@
-{{^if @member}}
+{{#if @member.paid}}
+
+    {{!--Silence is golden--}}
+
+{{else if @member}}
+
+{{!-- If free member, Upgrade CTA --}}
+<div class="pico-cta">
+    <div class="pico-container">
+        <h5>Ready for unlimited access?</h5>
+        <a class="gh-button gh-button-primary" href="/signup/">Upgrade now</a>
+        <p>Upgrade to a paid account on {{@site.title}} to get full access to all content, and help keep this site independent and ad-free.</p>
+    </div>
+</div>
+
+{{else}}
 
 {{!-- If member is logged out, Signup CTA --}}
 <div class="pico-cta">
