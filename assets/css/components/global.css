@@ -116,7 +116,7 @@ sub {
     bottom: -0.25em;
 }
 
-li + li {
+li:not([class]) + li:not([class]) {
     margin-top: 1em;
 }
 

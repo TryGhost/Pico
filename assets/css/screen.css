@@ -20,7 +20,6 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "ghost/readmore.css";
 @import "ghost/members.css";
 @import "ghost/errors.css";
-@import "ghost/footer.css";
 
 
 /* Main - Your styles here! Edit below
@@ -394,18 +393,100 @@ html,
 /* Global Footer
 /* ---------------------------------------------------------- */
 
-.gh-foot-actions a {
-    display: inline-flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
+.gh-foot {
+    padding: 6vmin 4vw;
 }
 
-.gh-foot-actions a svg {
+.gh-foot,
+.gh-foot a {
+    color: #afafaf;
+    text-decoration: none;
+}
+.gh-foot a:hover {
+    text-decoration: underline;
+}
+
+.gh-foot-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gh-foot-meta,
+.gh-foot-meta a {
+    color: #555;
+    text-decoration: none;
+}
+
+.gh-foot-meta > strong {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.gh-foot-icons {
+    display: flex;
+    align-items: center;
+}
+
+.gh-foot-icons a svg {
+    margin: 0 0 0 15px;
     height: 1.8rem;
     fill: currentcolor;
 }
 
-.gh-foot-actions a:last-child svg {
-    height: 2rem;
+.gh-foot-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+}
+
+.gh-foot-menu .nav {
+    display: flex;
+    align-items: center;
+}
+
+.gh-foot-menu .nav li {
+    position: relative;
+    margin: 0;
+}
+
+.gh-foot-menu .nav li + li {
+    padding: 0 0 0 10px;
+    margin: 0 0 0 10px;
+}
+
+.gh-foot-menu .nav li + li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    height: 2px;
+    width: 2px;
+    background: currentColor;
+    border-radius: 100%;
+}
+
+@media (max-width: 600px) {
+    .gh-foot {
+        text-align: center;
+    }
+    .gh-foot-meta {
+        flex-direction: column-reverse;
+        margin: 20px 0;
+    }
+    .gh-foot-icons {
+        margin: 0 0 20px;
+    }
+    .gh-foot-icons a svg {
+        margin: 0 12px;
+    }
+    .gh-foot-menu {
+        flex-direction: column;
+        margin: 0 0 20px;
+    }
+    .gh-foot-menu .nav {
+        margin: 0 0 5px;
+    }
 }

@@ -61,12 +61,10 @@
 </main>
 
 <footer class="gh-foot">
-    <div class="gh-container">
-        <div class="gh-foot-menu">
-            {{navigation}}
-        </div>
-        <div class="gh-foot-actions">
-            <div class="gh-foot-actions-list">
+    <div class="pico-container">
+        <div class="gh-foot-meta">
+            <strong>{{@site.title}}</strong>
+            <div class="gh-foot-icons">
                 {{#if @site.facebook}}
                 <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
                 {{/if}}
@@ -76,8 +74,9 @@
                 <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
             </div>
         </div>
-        <div class="gh-foot-meta">
-            Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+        <div class="gh-foot-menu">
+            {{navigation type="secondary"}}
+            <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
         </div>
     </div>
 </footer>
