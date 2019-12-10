@@ -29,39 +29,52 @@
                 <div class="pico-field-value">{{@member.email}}</div>
             </div>
             <div class="pico-field-actions">
-                <a href="" class="gh-button">Sign out</a>
+                <a class="gh-button" href="javascript:" data-members-signout>Sign out</a>
             </div>
         </div>
 
-        <div class="pico-field">
-            <div class="pico-field-content">
-                <label>Your plan</label>
-                <div class="pico-field-value">$<span class="plan-price">0</span>/{{plan.interval}}</div>
-            </div>
-            <div class="pico-field-actions">
-                <a href="" class="gh-button">Edit</a>
-            </div>
-        </div>
+        {{#foreach @member.subscriptions}}
 
-        <div class="pico-field">
-            <div class="pico-field-content">
-                <label>Billing info</label>
-                <div class="pico-field-value">**** **** **** {{default_payment_card_last4}}</div>
+            <div class="pico-field">
+                <div class="pico-field-content">
+                    <label>Your plan</label>
+                    <div class="pico-field-value">$<span class="gh-plan-price">0</span>/{{plan.interval}}</div>
+                </div>
+                <div class="pico-field-actions">
+                    {{!-- <a href="" class="gh-button">Edit</a> --}}
+                </div>
             </div>
-            <div class="pico-field-actions">
-                <a href="" class="gh-button">Update</a>
-            </div>
-        </div>
 
-        <div class="pico-field">
-            <div class="pico-field-content">
-                <label>Next bill date</label>
-                <div class="pico-field-value">{{date current_period_end format="DD MMM YYYY"}}</div>
+            <div class="pico-field">
+                <div class="pico-field-content">
+                    <label>Billing info</label>
+                    <div class="pico-field-value">**** **** **** {{default_payment_card_last4}}</div>
+                </div>
+                <div class="pico-field-actions">
+                    {{!-- <a href="" class="gh-button">Update</a> --}}
+                </div>
             </div>
-            <div class="pico-field-actions">
-                <a href="" class="gh-button">Cancel</a>
+
+            <div class="pico-field">
+                <div class="pico-field-content">
+                    <label>Next bill date</label>
+                    <div class="pico-field-value">{{date current_period_end format="DD MMM YYYY"}}</div>
+                </div>
+                <div class="pico-field-actions">
+                    {{!-- <a href="" class="gh-button">Cancel</a> --}}
+                </div>
             </div>
-        </div>
+
+            {{#contentFor "scripts"}}
+            <script>
+                $(document).ready(function () {
+                    var planAmount = {{ plan.amount }} / 100;
+                    $(".gh-plan-price").html(planAmount);
+                });
+            </script>
+            {{/contentFor}}
+
+        {{/foreach}}
 
     {{else if @member}}
 
@@ -82,7 +95,7 @@
                 <div class="pico-field-value">{{@member.email}}</div>
             </div>
             <div class="pico-field-actions">
-                <a href="" class="gh-button">Sign out</a>
+                <a class="gh-button" href="javascript:" disabled data-members-signout>Sign out</a>
             </div>
         </div>
 
