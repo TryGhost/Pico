@@ -79,7 +79,7 @@ form[data-members-form] .message-error {
 form[data-members-form].success .message-success,
 form[data-members-form].error .message-error {
     position: fixed;
-    top: 20px;
+    top: 4vmin;
     left: 4vw;
     right: 4vw;
     z-index: 9999;
@@ -138,4 +138,84 @@ form[data-members-form].success .message-success {
 /*-- Show error message on error --*/
 form[data-members-form].error .message-error {
     display: block;
+}
+
+
+/* Notifications
+/* ---------------------------------------------------------- */
+
+.gh-notification {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9000;
+    padding: 20px 60px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    background: var(--color-success);
+    transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    transform: translateY(-175%);
+    visibility: hidden;
+}
+
+.subscribe-success .gh-notification-subscribe {
+    visibility: visible;
+    transform: translateY(0);
+}
+.signup-success .gh-notification-signup {
+    visibility: visible;
+    transform: translateY(0);
+}
+.signin-success .gh-notification-signin {
+    visibility: visible;
+    transform: translateY(0);
+}
+.checkout-success .gh-notification-checkout {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.gh-notification.closed {
+    visibility: hidden;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(-175%);
+}
+
+.gh-notification-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.gh-notification-close:before {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 25px;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.gh-notification-close:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 25px;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transform: rotate(-45deg);
 }

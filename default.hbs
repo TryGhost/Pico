@@ -83,6 +83,8 @@
 
 </div>
 
+{{> "notifications"}}
+
 {{!-- <foot> --}}
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -95,10 +97,49 @@
 {{/if}}
 
 <script>
+// Parse the URL parameter
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// Give the parameter a variable name
+var action = getParameterByName('action');
+var stripe = getParameterByName('stripe');
+
 $(document).ready(function () {
     // Mobile Menu Trigger
     $('.gh-burger').click(function () {
         $('body').toggleClass('gh-head-open');
+    });
+    if (action == 'subscribe') {
+        $('body').addClass("subscribe-success");
+    }
+    if (action == 'signup') {
+        window.location = '{{@site.url}}/signup/?action=checkout';
+    }
+    if (action == 'checkout') {
+        $('body').addClass("signup-success");
+    }
+    if (action == 'signin') {
+        $('body').addClass("signin-success");
+    }
+    if (stripe == 'success') {
+        $('body').addClass("checkout-success");
+    }
+
+    $('.gh-notification-close').click(function () {
+        $(this).parent().addClass('closed');
+        var uri = window.location.toString();
+        if (uri.indexOf("?") > 0) {
+            var clean_uri = uri.substring(0, uri.indexOf("?"));
+            window.history.replaceState({}, document.title, clean_uri);
+        }
     });
 });
 </script>
