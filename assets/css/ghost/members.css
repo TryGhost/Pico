@@ -51,9 +51,9 @@
 /* Members Forms
 /* ---------------------------------------------------------- */
 
-form[data-members-form] .gh-button-loader,
-form[data-members-form] .message-success,
-form[data-members-form] .message-error {
+.gh-button-loader,
+.message-success,
+.message-error {
     display: none;
 }
 
@@ -111,12 +111,12 @@ form[data-members-form] .gh-button {
 /*-- Loading --*/
 
 /* Hide button text */
-form[data-members-form].loading .gh-button-content {
+.loading .gh-button-content {
     visibility: hidden;
 }
 
 /* Show loading spinner */
-form[data-members-form].loading .gh-button-loader {
+.loading .gh-button-loader {
     display: inline-block;
     position: absolute;
     left: 50%;
@@ -131,12 +131,12 @@ form[data-members-form].loading .gh-button-loader {
 }
 
 /*-- Show success message on success --*/
-form[data-members-form].success .message-success {
+.success .message-success {
     display: block;
 }
 
 /*-- Show error message on error --*/
-form[data-members-form].error .message-error {
+.error .message-error {
     display: block;
 }
 
