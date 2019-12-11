@@ -197,10 +197,14 @@ html,
 /* ---------------------------------------------------------- */
 
 .gh-header {
-    padding: 0 0 6vmin 0;
+    padding: 0 0 2vmin;
 }
 
-.pico-pagehead {
+.gh-footer {
+    padding: 3vmin 0 0 0;
+}
+
+    .pico-pagehead {
     padding: 0 0 10vmin 0;
     display: flex;
     align-items: center;
@@ -272,7 +276,7 @@ html,
 .gh-feature-image {
     grid-column: wide-start / wide-end;
     width: 100%;
-    margin: 6vmin 0 0;
+    margin: 6vmin 0 4vmin;
 }
 
 .gh-canvas blockquote,
@@ -355,6 +359,49 @@ html,
 .gh-button.gh-button-primary:hover {
     color: #fff !important;
     box-shadow: rgba(0,0,0,0.06) 0 1px 1px 0, rgba(0,0,0,0.1) 0 1px 6px 0, rgba(0,0,0,0.05) 0 2px 12px -6px;
+}
+
+
+/* Post CTA
+/* ---------------------------------------------------------- */
+
+.gh-upgrade-cta {
+    grid-column: wide-start / wide-end;
+    width: 100%;
+    padding: 4vmin;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+    background: color(var(--color-primary) l(-5%));
+    border-radius: 8px;
+}
+
+.gh-upgrade-cta h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.6rem;
+    letter-spacing: -0.5px;
+}
+
+.gh-upgrade-cta .gh-button,
+.gh-upgrade-cta .gh-button:hover {
+    margin: 30px 0;
+    color: var(--color-primary) !important;
+    background: #fff;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.gh-upgrade-cta p {
+    margin: 0;
+}
+
+.gh-upgrade-cta a,
+.gh-upgrade-cta a:hover {
+    color: #fff;
+    text-decoration: underline;
+    box-shadow: none !important;
 }
 
 
