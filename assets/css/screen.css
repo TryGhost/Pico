@@ -111,6 +111,20 @@ html,
     margin-left: 15px;
 }
 
+@media (max-width: 700px) {
+    .pico-sitehead {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pico-sitehead > img {
+        width: 100px;
+        margin: 0 auto 4vmin;
+    }
+    .pico-sitehead-cta {
+        justify-content: center;
+    }
+}
+
 
 /* Index
 /* ---------------------------------------------------------- */
@@ -163,6 +177,19 @@ html,
     opacity: 0.5;
 }
 
+@media (max-width: 700px) {
+    .gh-card-link {
+        flex-direction: column;
+    }
+    .gh-card-image {
+        width: 100%;
+        height: auto;
+        margin: 0 0 4vw 0;
+    }
+    .gh-card-content {
+        font-size: 1.6rem;
+    }
+}
 
 /* Page
 /* ---------------------------------------------------------- */
@@ -204,7 +231,7 @@ html,
     padding: 3vmin 0 0 0;
 }
 
-    .pico-pagehead {
+.pico-pagehead {
     padding: 0 0 10vmin 0;
     display: flex;
     align-items: center;
@@ -301,6 +328,17 @@ html,
     margin-top: 1px;
 }
 
+@media (max-width: 700px) {
+    .gh-canvas blockquote,
+    .gh-canvas dl,
+    .gh-canvas ol,
+    .gh-canvas p,
+    .gh-canvas ul {
+        font-family: inherit;
+        font-size: 1.6rem;
+    }
+}
+
 
 /* Author Archive
 /* ---------------------------------------------------------- */
@@ -368,7 +406,7 @@ html,
 .gh-upgrade-cta {
     grid-column: wide-start / wide-end;
     width: 100%;
-    padding: 4vmin;
+    padding: 7vmin;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: #fff;
