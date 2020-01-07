@@ -1,6 +1,6 @@
 # Pico
 
-A minimal, functional theme for running a paid-membership publication on [Ghost](https://ghost.org) - originally created by [@pjrvs](https://github.com/pjrvs) and [@jackellis](https://github.com/jackellis), acquired and stewarded by [@tryghost](https://github.com/tryghost) in 2019. Now available for free, for everyone!
+A minimal, functional theme for running a paid-membership publication on [Ghost](https://ghost.org) - originally created by [@pjrvs](https://github.com/pjrvs) and [@jackellis](https://github.com/jackellis), acquired and stewarded by [@tryghost](https://github.com/tryghost) in 2020. Now available for free, for everyone!
 
 ![pico](https://user-images.githubusercontent.com/120485/70646878-67b93400-1c7a-11ea-9722-64bb7ecf2d22.png)
 
@@ -48,4 +48,4 @@ yarn zip
 
 # Copyright & License
 
-Copyright (c) 2013-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
