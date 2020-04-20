@@ -37,17 +37,6 @@
         <div class="gh-head-menu">
             {{navigation}}
         </div>
-        <div class="gh-head-actions">
-            <div class="gh-head-actions-list">
-                {{#if @member}}
-                    <a class="gh-button gh-button-primary" href="/account/">Account</a>
-                    <a class="gh-button" href="javascript:" data-members-signout>Sign out</a>
-                {{else}}
-                    <a class="gh-button" href="/signin/">Sign in</a>
-                    <a class="gh-button gh-button-primary" href="/signup/">Subscribe now</a>
-                {{/if}}
-            </div>
-        </div>
     </nav>
 </header>
 
@@ -65,18 +54,17 @@
         <div class="gh-foot-meta">
             <strong>{{@site.title}}</strong>
             <div class="gh-foot-icons">
+                <a href="https://www.linkedin.com/in/sugataach" title="LinkedIn" target="_blank" rel="noopener">{{> "icons/linkedin"}}</a>
                 {{#if @site.facebook}}
                 <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
                 {{/if}}
                 {{#if @site.twitter}}
                 <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                 {{/if}}
-                <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
             </div>
         </div>
         <div class="gh-foot-menu">
             {{navigation type="secondary"}}
-            <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
         </div>
     </div>
 </footer>

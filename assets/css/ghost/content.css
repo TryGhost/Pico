@@ -93,6 +93,12 @@
     margin-top: 6vmin;
 }
 
+.gh-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 .gh-canvas blockquote,
 .gh-canvas ol,
 .gh-canvas ul,

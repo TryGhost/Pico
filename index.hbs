@@ -5,32 +5,23 @@
 
         <header class="pico-sitehead">
             {{#if @site.logo}}
-                <img src="{{@site.logo}}" alt="{{@site.title}}" />
+            <img src="{{@site.logo}}" alt="{{@site.title}}" />
             {{/if}}
             <div class="pico-sitehead-content">
                 <h1>{{@site.title}}</h1>
                 <p>{{@site.description}}</p>
-                <div class="pico-sitehead-cta">
-                    {{#if @member.paid}}
-                        <a class="gh-button gh-button-primary" href="/account/">My account</a>
-                        <a class="gh-button" href="javascript:" data-members-signout>Sign out</a>
-                    {{else if @member}}
-                        <a class="gh-button gh-button-primary" href="/signup/">Upgrade</a>
-                        <a class="gh-button" href="javascript:" data-members-signout>Sign out</a>
-                    {{else}}
-                        <a class="gh-button gh-button-primary" href="/signup/">Subscribe now</a>
-                        <a class="gh-button" href="/signin/">Sign in</a>
-                    {{/if}}
+                <div class="gh-foot-menu">
+                    {{navigation type="secondary"}}
                 </div>
             </div>
         </header>
 
         <div class="gh-postfeed">
-        {{#foreach posts visibility="all"}}
+            {{#foreach posts visibility="all"}}
 
             {{> "card"}} {{!-- partials/card.hbs --}}
 
-        {{/foreach}}
+            {{/foreach}}
         </div>
 
     </div>

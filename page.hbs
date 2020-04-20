@@ -2,6 +2,17 @@
 
 {{#post}}
 <article class="gh-article {{post_class}}">
+    <header class="gh-header gh-canvas">
+        <a href="{{@site.url}}" class="pico-pagehead">
+            {{#if @site.logo}}
+            <img src="{{@site.logo}}" alt="{{@site.title}}" />
+            {{/if}}
+            <div class="pico-pagehead-content">
+                <p><strong>{{@site.title}}</strong> &bull; {{@site.description}}</p>
+            </div>
+        </a>
+        <h1 class="gh-title">{{title}}</h1>
+    </header>
 
     <div class="gh-content gh-canvas">
         {{content}}
