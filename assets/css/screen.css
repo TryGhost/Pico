@@ -143,6 +143,7 @@ html,
     height: 180px;
     object-fit: cover;
     margin-left: 4vmin;
+    flex-shrink: 0;
 }
 
 .gh-card-meta {
