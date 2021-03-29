@@ -62,7 +62,3 @@
     background-color: var(--color-primary);
     box-shadow: none;
 }
-
-.gh-button.gh-button-primary:hover {
-    background-color: color(var(--color-primary) l(-10%));
-}
