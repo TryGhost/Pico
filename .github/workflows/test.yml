@@ -28,5 +28,5 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm install yarn
-      - run: yarn install
+      - run: yarn install --ignore-scripts
       - run: yarn test:ci
