@@ -4,7 +4,7 @@ const pump = require('pump');
 // gulp plugins and utils
 var livereload = require('gulp-livereload');
 var postcss = require('gulp-postcss');
-var zip = require('gulp-zip');
+var zipModule;
 var uglify = require('gulp-uglify');
 var beeper = require('beeper');
 
@@ -62,7 +62,8 @@ function js(done) {
     ], handleError(done));
 }
 
-function zipper(done) {
+async function zipper(done) {
+    if (!zipModule) { zipModule = (await import('gulp-zip')).default; }
     var targetDir = 'dist/';
     var themeName = require('./package.json').name;
     var filename = themeName + '.zip';
@@ -73,7 +74,7 @@ function zipper(done) {
             '!node_modules', '!node_modules/**',
             '!dist', '!dist/**'
         ]),
-        zip(filename),
+        zipModule(filename),
         dest(targetDir)
     ], handleError(done));
 }
