@@ -18,4 +18,6 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: yarn
+      - run: gulp build
+      - run: gulp zip
       - run: yarn test:ci
