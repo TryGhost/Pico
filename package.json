@@ -44,7 +44,7 @@
   "contributors": "https://github.com/TryGhost/Pico/graphs/contributors",
   "devDependencies": {
     "autoprefixer": "10.4.24",
-    "beeper": "2.1.0",
+    "beeper": "3.0.0",
     "cssnano": "7.1.2",
     "gscan": "5.2.4",
     "gulp": "5.0.1",
