@@ -43,7 +43,7 @@
   "bugs": "https://github.com/TryGhost/Pico/issues",
   "contributors": "https://github.com/TryGhost/Pico/graphs/contributors",
   "devDependencies": {
-    "autoprefixer": "10.4.24",
+    "autoprefixer": "10.4.27",
     "beeper": "3.0.0",
     "cssnano": "7.1.2",
     "gscan": "5.2.5",
