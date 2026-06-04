@@ -13,12 +13,13 @@
   "scripts": {
     "dev": "gulp",
     "zip": "gulp zip",
+    "build": "gulp build",
     "test": "gscan .",
     "test:ci": "gscan --fatal --verbose .",
-    "pretest": "gulp build",
-    "preship": "yarn test",
-    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
+    "pretest": "pnpm zip",
+    "pretest:ci": "pnpm zip"
   },
+  "packageManager": "pnpm@11.5.1",
   "author": {
     "name": "Ghost Foundation",
     "email": "hello@ghost.org",
