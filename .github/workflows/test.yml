@@ -31,3 +31,13 @@ jobs:
       # non-zero and every PR would fail. Use the --fatal flow until those errors
       # are fixed, then switch this back to `pnpm test`.
       - run: pnpm test:ci
+
+  all-tests-pass:
+    name: All tests pass
+    if: always()
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify all required jobs succeeded
+        if: contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled')
+        run: exit 1
