@@ -32,8 +32,8 @@ jobs:
       # are fixed, then switch this back to `pnpm test`.
       - run: pnpm test:ci
 
-  all-tests-pass:
-    name: All tests pass
+  required-checks-pass:
+    name: Required checks pass
     if: always()
     needs: [test]
     runs-on: ubuntu-latest
