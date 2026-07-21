@@ -19,7 +19,7 @@
     "pretest": "pnpm zip",
     "pretest:ci": "pnpm zip"
   },
-  "packageManager": "pnpm@11.13.1",
+  "packageManager": "pnpm@11.14.0",
   "author": {
     "name": "Ghost Foundation",
     "email": "hello@ghost.org",
