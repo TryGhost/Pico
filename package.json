@@ -44,9 +44,9 @@
   "bugs": "https://github.com/TryGhost/Pico/issues",
   "contributors": "https://github.com/TryGhost/Pico/graphs/contributors",
   "devDependencies": {
-    "autoprefixer": "10.5.0",
+    "autoprefixer": "10.5.4",
     "beeper": "3.0.0",
-    "cssnano": "8.0.1",
+    "cssnano": "8.0.2",
     "gscan": "6.4.2",
     "gulp": "5.0.1",
     "gulp-livereload": "4.0.2",
@@ -55,7 +55,7 @@
     "gulp-uglify": "3.0.2",
     "gulp-watch": "5.0.1",
     "gulp-zip": "6.1.0",
-    "postcss": "8.5.15",
+    "postcss": "8.5.20",
     "postcss-color-function": "4.1.0",
     "postcss-custom-properties": "15.0.1",
     "postcss-easy-import": "4.0.0"
