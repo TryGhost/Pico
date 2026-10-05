@@ -173,8 +173,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       cssnano:
-        specifier: 9.1.2
-        version: 9.1.2(postcss@8.5.28)
+        specifier: 9.2.0
+        version: 9.2.0(postcss@8.5.28)
       gscan:
         specifier: 6.6.1
         version: 6.6.1(supports-color@7.2.0)
@@ -206,8 +206,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0(supports-color@7.2.0)
       postcss-custom-properties:
-        specifier: 15.0.3
-        version: 15.0.3(postcss@8.5.28)
+        specifier: 15.0.4
+        version: 15.0.4(postcss@8.5.28)
       postcss-easy-import:
         specifier: 4.0.0
         version: 4.0.0(postcss@8.5.28)
@@ -728,8 +728,8 @@ packages:
     peerDependencies:
       postcss: ^8.5.28
 
-  cssnano@9.1.2:
-    resolution: {integrity: sha512-UJnrkOxzaK21cYEbxnp21vUohm/wg8B8R0eoLe7A6Jnm9nHeIQ0irn3L9HYzml9BFkrF97JwE7d6HV4UU6+1dQ==}
+  cssnano@9.2.0:
+    resolution: {integrity: sha512-NYVVsZN5PHe3prTVEg9ILN/N4+k9x6EstsSdFM02tO2nX+C0wb4zfoUGyMELwodTHMFus6N7rPb1ZDWiA/PAJw==}
     engines: {node: ^22.22.3 || ^24.15.0 || >=26.0}
     peerDependencies:
       postcss: ^8.5.28
@@ -1684,8 +1684,8 @@ packages:
     peerDependencies:
       postcss: ^8.5.28
 
-  postcss-custom-properties@15.0.3:
-    resolution: {integrity: sha512-3pzlWl/dOIxWiszQkfJvU178S7XO4b0elflmkqLn8RBEWZZZl1UJnSVhLn1BFsusTJWDwW1Pj4hQwn4sRTMLrA==}
+  postcss-custom-properties@15.0.4:
+    resolution: {integrity: sha512-GQWvg8s7wAOA+Ytf9Ij8UkcY57H4/wuhtWIaGHfeNSEvp7u/bMOQFinhtf/FGDpR/qJgsVQQuu2GYTN7f1UuYg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       postcss: ^8.4
@@ -2988,7 +2988,7 @@ snapshots:
       '@csstools/css-tokenizer': 4.0.2
       postcss: 8.5.28
 
-  cssnano@9.1.2(postcss@8.5.28):
+  cssnano@9.2.0(postcss@8.5.28):
     dependencies:
       cssnano-preset-default: 9.2.2(postcss@8.5.28)
       postcss: 8.5.28
@@ -4076,7 +4076,7 @@ snapshots:
       cssnano-utils: 8.1.0(postcss@8.5.28)
       postcss: 8.5.28
 
-  postcss-custom-properties@15.0.3(postcss@8.5.28):
+  postcss-custom-properties@15.0.4(postcss@8.5.28):
     dependencies:
       '@csstools/cascade-layer-name-parser': 3.0.2(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)
       '@csstools/css-parser-algorithms': 4.0.2(@csstools/css-tokenizer@4.0.2)
