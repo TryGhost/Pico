@@ -262,8 +262,8 @@ packages:
   '@tryghost/debug@2.3.16':
     resolution: {integrity: sha512-xnFUf3+PrTO2hQXIlAd4YeDjTeZZ5Qa0dDVO8FCKNkf63DQTQTPoOJ8WygVFfqBnIYcdbB534Mo5kCzIfQPXDQ==}
 
-  '@tryghost/errors@3.4.1':
-    resolution: {integrity: sha512-kUsC+QDJC+C7z8KPhwSxR0uXwloTNxRL9yzvyV7X/XMT2Wc/tz114uQgrqUMVbEWYhyzlNa7WvlqcOsyK0wo+g==}
+  '@tryghost/errors@3.4.2':
+    resolution: {integrity: sha512-vKkoorFbIoFEATz0wojDAKnZs4jrezlaA3r0xSaaAGrweZPqMBwGfFx16T6zTOgwK8Moms2ciyMtQepYS/2eiA==}
 
   '@tryghost/mongo-knex@0.11.2':
     resolution: {integrity: sha512-0l7L/J609p+12+rA15Muya1JoIeSfBxIUZRB2FfROtJ2U+FTEOzZ/c0HgxB8eAArJMW2VXECmLCAbNUwygRzfg==}
@@ -283,14 +283,14 @@ packages:
   '@tryghost/root-utils@2.3.16':
     resolution: {integrity: sha512-goAiGfO2tyXxoyLJbTHktShOnziwSGa9lvBKq6zwvdz4/WGYRdecfovtb0n4aRTTYeKIlnsghg0v1g64LMIRug==}
 
-  '@tryghost/zip@3.5.15':
-    resolution: {integrity: sha512-GPRg3doLWGYC+ZmCr2Sp2nrhb8YGV+omG9dIDK1IIWJOLXSfx7g50M71XzAYU4uXYFalZPpd0gjy3+FKTLvpaA==}
+  '@tryghost/zip@3.5.16':
+    resolution: {integrity: sha512-/i7a4u/FVXXt10/m5O5kcDfZWKNTxv4Nx2lFDjyS8OwJ/zaS/3+6sxMG3w4GZpXClbA445IcdlTvEfPmmsY2wg==}
 
   '@types/expect@1.20.4':
     resolution: {integrity: sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg==}
 
-  '@types/node@26.6.4':
-    resolution: {integrity: sha512-ldVPDCzj7fsaGZrLB0NuHuTvJcsNasysBAqMolr/cgxrLd1xbqxIr3XJiPnHHJUCxj5sNF1vnRj9aWnrVh5Jcg==}
+  '@types/node@26.6.5':
+    resolution: {integrity: sha512-uMzsv9stDdofIZBx4UGh4Z9ZgXnGC9seRDscilBcTHAeOFk67MZg/k9bWVfO+bk4qZmG+l52hRnLwUiH2LnJTg==}
 
   '@types/vinyl@2.0.12':
     resolution: {integrity: sha512-Sr2fYMBUVGYq8kj3UthXFAu5UN6ZW+rYr4NACjZQJvHvj+c8lYv0CahmZ2P/r7iUkN44gGUBwqxZkrKXYPb7cw==}
@@ -445,8 +445,8 @@ packages:
       bare-abort-controller:
         optional: true
 
-  bare-fs@4.8.2:
-    resolution: {integrity: sha512-+ZI68KHMUvosXfKbg/UOHK0tbCdRnegbvPEdEcZ3Nd6TetieQsJPRXBRXPdLyy8+3VSEbPXtsumTpEtt78xv9w==}
+  bare-fs@4.8.4:
+    resolution: {integrity: sha512-MPC2eyrpbk3A873sK4y6rk+Iv4o2enxTjHZ8zH3HO0mjrpm5XjnguY2XmfidIsDV6vnjpbMBKUAJpV0ISD2SsQ==}
     engines: {bare: '>=1.28.0'}
     peerDependencies:
       bare-buffer: '*'
@@ -481,8 +481,8 @@ packages:
     resolution: {integrity: sha512-5T6P4xPgpp0YDFvSWwEZ4NoE3aM4QBQXDzmVbraCkFj8zHM+mba8SyqB5DbZWyR7mYHo6Y7BdQo3MoA4m0TeQg==}
     engines: {node: '>=0.10.0'}
 
-  baseline-browser-mapping@2.11.27:
-    resolution: {integrity: sha512-ElY12DaROGuan+lMmZ8Cvo/ZUbXPe7Enc/9VU/b1T3Kp4dwytRcNdR8DoSJN5SNJT/CuvcCA0DHDVmMOCePdRQ==}
+  baseline-browser-mapping@2.11.28:
+    resolution: {integrity: sha512-br0LOmjJqr6Rt4AEkadbcNf67Zpo7EPwKsWbjnRrJIa1QYFHQBqM4C7F2WTbV8ahTEcg1Eo+Y0aWjjORInYFyA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -565,8 +565,8 @@ packages:
   caniuse-api@4.0.0:
     resolution: {integrity: sha512-B0hQ1OLyJuHTQSOWXvwibWqM6DCoqJdvBA6X1S/53bd4XU7LJ1yurIPlrsouol3mw1jh9pGI4ivubSpmJeIqCA==}
 
-  caniuse-lite@1.0.30001814:
-    resolution: {integrity: sha512-/Uaf1lAzr59XcMpW0o96WoEfr+VXK2OX4U9AgFoiSHsVJ4HppnIFUjtYzsyDH2+tgANaQb2/oxYGwCPapN1FpA==}
+  caniuse-lite@1.0.30001815:
+    resolution: {integrity: sha512-uDybUEyfgbyJJ93J1vikTylBX31AkdVYeVPeffMQpf8XN7hSfr0oZOn4VFOIMNvtU5+rHvC5Udg2TgtJKHm23Q==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -814,8 +814,8 @@ packages:
     resolution: {integrity: sha512-ktkaa6XR7COAR3oj02CF3IOgz2m1hCaY3SfzvKT4Svt2MhHw9XCt+ncJNWfe2TGz31iqzNGZ8spdKQflj+Rlog==}
     engines: {node: '>=14.16'}
 
-  electron-to-chromium@1.5.444:
-    resolution: {integrity: sha512-5ss/uJfoDYDHT0lfJzT6FbcskIzROIOPf0BbbFkGcvDzoJU7i//9GDrwwIHQVmIsrAGiF3ihpADBRIsrEFt1rQ==}
+  electron-to-chromium@1.5.452:
+    resolution: {integrity: sha512-cVvk1YBSj6571VmV6hdJTqj94Y79xSu8cj6Y9t6ae4Y4431z8/7EJFvu3rVp90xhfuv9BpPKUmaLfTo4+FOGBg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1513,8 +1513,8 @@ packages:
   nan@2.29.0:
     resolution: {integrity: sha512-GlGk3HIvitbvs+LT3g6XUP1kpirKNvmDFwF/bmo6XNWSb/eYEs/O4bfgIEIXCZ+lIOTS5xNwDvSGMw6FJdAhtA==}
 
-  nanoid@3.3.19:
-    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
+  nanoid@3.3.20:
+    resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -1528,8 +1528,8 @@ packages:
   next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
 
-  node-releases@2.0.57:
-    resolution: {integrity: sha512-kQK9LGGFiHtrWiNhZtA7Qbw17AQz+dmsEKODRIVTXA9+e5MS/2gZEBhYJt13GrAz5/IOZKddH/0Z3TP/Zgo+yw==}
+  node-releases@2.0.58:
+    resolution: {integrity: sha512-BdiKAgbfRlvfMq/XzO/AF9NPmaA8a+YpLAyAFTVFBj3gARrAIfWvNq7Q7NE4se3KgFu0KkrvQMxTS0XVnsGzHg==}
     engines: {node: '>=18'}
 
   normalize-path@2.1.1:
@@ -1658,11 +1658,11 @@ packages:
     resolution: {integrity: sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg==}
     engines: {node: '>=0.10.0'}
 
-  postcss-calc@11.2.2:
-    resolution: {integrity: sha512-wSquceGIY20fnsXcdIYtzW0r34aoXlT6iDYpYKpgR5Ax/KCZMDteE54Z+4Ee24ryYkjnRU5F3cxvhRfNp6t5VA==}
+  postcss-calc@11.2.3:
+    resolution: {integrity: sha512-pFW3MR2a4W7uHcSGUiyQGGXZWHon83ljbNwnUJ1mRKublWQbv+3o9NiqhlV4TJfNby+U+zLY2OgiywzhA5eFqw==}
     engines: {node: ^22.22.3 || ^24.15 || >=26.0}
     peerDependencies:
-      postcss: ^8.5.28
+      postcss: ^8.5.29
 
   postcss-color-function@4.1.0:
     resolution: {integrity: sha512-2/fuv6mP5Lt03XbRpVfMdGC8lRP1sykme+H1bR4ARyOmSMB8LPSjcL6EAI1iX6dqUF+jNEvKIVVXhan1w/oFDQ==}
@@ -1914,8 +1914,8 @@ packages:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
     engines: {node: '>= 6'}
 
-  readable-stream@4.7.0:
-    resolution: {integrity: sha512-oIGGmcpTLwPga8Bn6/Z75SVaH1z5dUut2ibSyAMVhmUggWpmDn2dapB0n7f8nwaSiRtepAsfJyfXIO5DCVAODg==}
+  readable-stream@4.8.0:
+    resolution: {integrity: sha512-2jhTTU3Eilp/2DMT71gbcoqC35eQHasMJH0RHkYxwlxIv3+FR6Y5xAFZIwEGLxKkjZYEFlsiMNIdwUqjK2lLHQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   readdir-glob@3.0.0:
@@ -1985,8 +1985,8 @@ packages:
     resolution: {integrity: sha512-ZuF55hVUQaaczgOIwqWzkEcEidmlD/xl44x1UZnhOXcYuFN2S6+rcxpG+C1N3So0wvNI3DmJICUFfu2SxhBmvg==}
     deprecated: https://github.com/lydell/resolve-url#deprecated
 
-  resolve@1.22.12:
-    resolution: {integrity: sha512-TyeJ1zif53BPfHootBGwPRYT1RUt6oGWsaQr8UyZW/eAm9bKoijtvruSDEmZHm92CwS9nj7/fWttqPCgzep8CA==}
+  resolve@1.22.13:
+    resolution: {integrity: sha512-Dj/cW9zBV2aRj6XzCxuGIs3ESZKv02jixne3q6jFZYZ3/Tg09gHHviSMDL4kObh9pqSahdRHEnDoaP2gn8YLhA==}
     engines: {node: '>= 0.4'}
     hasBin: true
 
@@ -2262,8 +2262,8 @@ packages:
     resolution: {integrity: sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==}
     engines: {node: '>=4'}
 
-  update-browserslist-db@1.3.3:
-    resolution: {integrity: sha512-pJ2sYawQS0R/WI928Gj5GlPhTGzbMelq0+4INtSYNDV9ErKJcX6xjGWkoG/VnB3dpUm00zALaqkrUD77pO5TDQ==}
+  update-browserslist-db@1.3.4:
+    resolution: {integrity: sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -2426,7 +2426,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tryghost/errors@3.4.1': {}
+  '@tryghost/errors@3.4.2': {}
 
   '@tryghost/mongo-knex@0.11.2(supports-color@7.2.0)':
     dependencies:
@@ -2463,9 +2463,9 @@ snapshots:
       caller: 1.1.0
       find-root: 1.1.0
 
-  '@tryghost/zip@3.5.15(supports-color@7.2.0)':
+  '@tryghost/zip@3.5.16(supports-color@7.2.0)':
     dependencies:
-      '@tryghost/errors': 3.4.1
+      '@tryghost/errors': 3.4.2
       archiver: 8.0.0
       extract-zip: 2.0.1(supports-color@7.2.0)
     transitivePeerDependencies:
@@ -2476,18 +2476,18 @@ snapshots:
 
   '@types/expect@1.20.4': {}
 
-  '@types/node@26.6.4':
+  '@types/node@26.6.5':
     dependencies:
       undici-types: 8.9.0
 
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 26.6.4
+      '@types/node': 26.6.5
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 26.6.4
+      '@types/node': 26.6.5
     optional: true
 
   abort-controller@3.0.0:
@@ -2540,7 +2540,7 @@ snapshots:
       is-stream: 4.0.1
       lazystream: 1.0.1
       normalize-path: 3.0.0
-      readable-stream: 4.7.0
+      readable-stream: 4.8.0
       readdir-glob: 3.0.0
       tar-stream: 3.2.2
       zip-stream: 7.0.5
@@ -2594,7 +2594,7 @@ snapshots:
   autoprefixer@10.6.1(postcss@8.5.29):
     dependencies:
       browserslist: 4.29.3
-      caniuse-lite: 1.0.30001814
+      caniuse-lite: 1.0.30001815
       fraction.js: 5.3.4
       picocolors: 1.1.1
       postcss: 8.5.29
@@ -2616,7 +2616,7 @@ snapshots:
 
   bare-events@2.9.2: {}
 
-  bare-fs@4.8.2:
+  bare-fs@4.8.4:
     dependencies:
       bare-events: 2.9.2
       bare-path: 3.1.2
@@ -2655,7 +2655,7 @@ snapshots:
       mixin-deep: 1.3.2
       pascalcase: 0.1.1
 
-  baseline-browser-mapping@2.11.27: {}
+  baseline-browser-mapping@2.11.28: {}
 
   beeper@3.0.0:
     dependencies:
@@ -2721,11 +2721,11 @@ snapshots:
 
   browserslist@4.29.3:
     dependencies:
-      baseline-browser-mapping: 2.11.27
-      caniuse-lite: 1.0.30001814
-      electron-to-chromium: 1.5.444
-      node-releases: 2.0.57
-      update-browserslist-db: 1.3.3(browserslist@4.29.3)
+      baseline-browser-mapping: 2.11.28
+      caniuse-lite: 1.0.30001815
+      electron-to-chromium: 1.5.452
+      node-releases: 2.0.58
+      update-browserslist-db: 1.3.4(browserslist@4.29.3)
 
   buffer-crc32@0.2.13: {}
 
@@ -2765,9 +2765,9 @@ snapshots:
   caniuse-api@4.0.0:
     dependencies:
       browserslist: 4.29.3
-      caniuse-lite: 1.0.30001814
+      caniuse-lite: 1.0.30001815
 
-  caniuse-lite@1.0.30001814: {}
+  caniuse-lite@1.0.30001815: {}
 
   chalk@2.4.2:
     dependencies:
@@ -2882,7 +2882,7 @@ snapshots:
       crc32-stream: 7.0.1
       is-stream: 4.0.1
       normalize-path: 3.0.0
-      readable-stream: 4.7.0
+      readable-stream: 4.8.0
 
   concat-map@0.0.1: {}
 
@@ -2906,7 +2906,7 @@ snapshots:
   crc32-stream@7.0.1:
     dependencies:
       crc-32: 1.2.2
-      readable-stream: 4.7.0
+      readable-stream: 4.8.0
 
   css-color-function@1.3.3(supports-color@7.2.0):
     dependencies:
@@ -2948,7 +2948,7 @@ snapshots:
       browserslist: 4.29.3
       cssnano-utils: 9.0.0(postcss@8.5.29)
       postcss: 8.5.29
-      postcss-calc: 11.2.2(postcss@8.5.29)
+      postcss-calc: 11.2.3(postcss@8.5.29)
       postcss-colormin: 9.0.8(postcss@8.5.29)
       postcss-convert-values: 9.0.9(postcss@8.5.29)
       postcss-discard-comments: 9.0.8(postcss@8.5.29)
@@ -3071,7 +3071,7 @@ snapshots:
 
   easy-transform-stream@1.0.1: {}
 
-  electron-to-chromium@1.5.444: {}
+  electron-to-chromium@1.5.452: {}
 
   emoji-regex@8.0.0: {}
 
@@ -3449,10 +3449,10 @@ snapshots:
   gscan@6.6.1(supports-color@7.2.0):
     dependencies:
       '@tryghost/debug': 2.3.16(supports-color@7.2.0)
-      '@tryghost/errors': 3.4.1
+      '@tryghost/errors': 3.4.2
       '@tryghost/nql': 0.13.4(supports-color@7.2.0)
       '@tryghost/pretty-cli': 3.3.16
-      '@tryghost/zip': 3.5.15(supports-color@7.2.0)
+      '@tryghost/zip': 3.5.16(supports-color@7.2.0)
       chalk: 6.0.0
       handlebars: 4.7.9
       lodash: 4.18.1
@@ -3794,7 +3794,7 @@ snapshots:
       flagged-respawn: 2.0.0
       is-plain-object: 5.1.0
       rechoir: 0.8.0
-      resolve: 1.22.12
+      resolve: 1.22.13
 
   lilconfig@3.1.3: {}
 
@@ -3906,7 +3906,7 @@ snapshots:
   nan@2.29.0:
     optional: true
 
-  nanoid@3.3.19: {}
+  nanoid@3.3.20: {}
 
   nanomatch@1.2.13(supports-color@7.2.0):
     dependencies:
@@ -3928,7 +3928,7 @@ snapshots:
 
   next-tick@1.1.0: {}
 
-  node-releases@2.0.57: {}
+  node-releases@2.0.58: {}
 
   normalize-path@2.1.1:
     dependencies:
@@ -4040,7 +4040,7 @@ snapshots:
 
   posix-character-classes@0.1.1: {}
 
-  postcss-calc@11.2.2(postcss@8.5.29):
+  postcss-calc@11.2.3(postcss@8.5.29):
     dependencies:
       '@csstools/css-tokenizer': 4.0.2
       postcss: 8.5.29
@@ -4107,14 +4107,14 @@ snapshots:
       pify: 3.0.0
       postcss: 8.5.29
       postcss-import: 14.1.0(postcss@8.5.29)
-      resolve: 1.22.12
+      resolve: 1.22.13
 
   postcss-import@14.1.0(postcss@8.5.29):
     dependencies:
       postcss: 8.5.29
       postcss-value-parser: 4.2.0
       read-cache: 1.0.2
-      resolve: 1.22.12
+      resolve: 1.22.13
 
   postcss-load-config@5.1.0(postcss@8.5.29):
     dependencies:
@@ -4264,7 +4264,7 @@ snapshots:
 
   postcss@8.5.29:
     dependencies:
-      nanoid: 3.3.19
+      nanoid: 3.3.20
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
@@ -4313,7 +4313,7 @@ snapshots:
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
 
-  readable-stream@4.7.0:
+  readable-stream@4.8.0:
     dependencies:
       abort-controller: 3.0.0
       buffer: 6.0.3
@@ -4339,7 +4339,7 @@ snapshots:
 
   rechoir@0.8.0:
     dependencies:
-      resolve: 1.22.12
+      resolve: 1.22.13
 
   regex-cache@0.4.4:
     dependencies:
@@ -4377,7 +4377,7 @@ snapshots:
 
   resolve-url@0.2.1: {}
 
-  resolve@1.22.12:
+  resolve@1.22.13:
     dependencies:
       es-errors: 1.3.0
       is-core-module: 2.17.0
@@ -4593,7 +4593,7 @@ snapshots:
   tar-stream@3.2.2:
     dependencies:
       b4a: 1.9.0
-      bare-fs: 4.8.2
+      bare-fs: 4.8.4
       fast-fifo: 1.3.2
       streamx: 2.28.1
     transitivePeerDependencies:
@@ -4700,7 +4700,7 @@ snapshots:
 
   upath@1.2.0: {}
 
-  update-browserslist-db@1.3.3(browserslist@4.29.3):
+  update-browserslist-db@1.3.4(browserslist@4.29.3):
     dependencies:
       browserslist: 4.29.3
       escalade: 3.2.0
@@ -4851,4 +4851,4 @@ snapshots:
     dependencies:
       compress-commons: 7.0.1
       normalize-path: 3.0.0
-      readable-stream: 4.7.0
+      readable-stream: 4.8.0
